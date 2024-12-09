@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - charola
+  - item
+  - Empujable
+  - piso
+  - rodillo
   layers:
   - Default
   - TransparentFX
@@ -12,7 +16,7 @@ TagManager:
   - charola
   - Water
   - UI
-  - 
+  - piso
   - 
   - 
   - 
