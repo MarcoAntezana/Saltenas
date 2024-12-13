@@ -6,7 +6,7 @@ public class ControlEscenas : MonoBehaviour
 {
     public void IrAEscena(string escenaNueva)
     {
-        SceneManager.LoadScene(escenaNueva);
+        SceneManager.LoadScene("Primer_Nivel1");
     }
 
     public void Exit()

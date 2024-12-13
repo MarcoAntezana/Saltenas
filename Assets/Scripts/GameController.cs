@@ -41,7 +41,13 @@ public class GameController : MonoBehaviour
 
     void FinJuego()
     {
+<<<<<<< Updated upstream
         Time.timeScale = 0;
+=======
+        Debug.Log("Game Over");
+        // Aquí podrías implementar lógica adicional para finalizar el juego, como mostrar una pantalla de fin de juego o reiniciar la escena
+        //Time.timeScale = 0; // Pausa el juego
+>>>>>>> Stashed changes
     }
 
     void Ganador(PlayerMuerte ganador)
