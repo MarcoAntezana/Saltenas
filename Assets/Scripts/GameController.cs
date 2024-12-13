@@ -41,7 +41,7 @@ public class GameController : MonoBehaviour
 
     void FinJuego()
     {
-        Time.timeScale = 0;
+        Time.timeScale = 1;
     }
 
     void Ganador(PlayerMuerte ganador)
@@ -50,7 +50,7 @@ public class GameController : MonoBehaviour
         {
             ganador.playerWinCanvas.gameObject.SetActive(true);
         }
-        Time.timeScale = 0;
+        Time.timeScale = 1;
     }
 }
 

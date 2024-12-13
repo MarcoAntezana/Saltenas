@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class SpawnItems : MonoBehaviour
 {
-    public GameObject prefabToSpawn; // Prefab que se spawneará
-    public float minSpawnTime = 1f;  // Tiempo mínimo entre spawns
-    public float maxSpawnTime = 5f;  // Tiempo máximo entre spawns
-    public Transform spawnLocation;  // Lugar donde aparecerán los objetos (opcional)
+    public GameObject prefabToSpawn;
+    public float tiempoMin = 5f;
+    public float tiempoMax = 10f;
+    public Transform spawnLocation;
 
-    private float nextSpawnTime;     // Tiempo para el próximo spawn
+    private float nextSpawnTime;
 
     void Start()
     {
@@ -29,18 +29,15 @@ public class SpawnItems : MonoBehaviour
     {
         if (prefabToSpawn == null)
         {
-            Debug.LogWarning("No hay prefab asignado para spawnear.");
             return;
         }
-
-        // Instanciar el prefab en la ubicación del spawner o en la posición del spawnLocation
         Vector3 spawnPosition = spawnLocation != null ? spawnLocation.position : transform.position;
         Instantiate(prefabToSpawn, spawnPosition, Quaternion.identity);
     }
 
     void ScheduleNextSpawn()
     {
-        // Calcular un tiempo aleatorio para el próximo spawn
-        nextSpawnTime = Time.time + Random.Range(minSpawnTime, maxSpawnTime);
+        nextSpawnTime = Time.time + Random.Range(tiempoMin, tiempoMax);
     }
+
 }
