@@ -2,20 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
     void Update()
     {
-        CheckGameOverOrWinner();
+        VerificarGanador();
     }
 
-    void CheckGameOverOrWinner()
+    void VerificarGanador() 
     {
-        // Buscamos todos los jugadores en la escena
+        //buscar jugadores
         PlayerMuerte[] players = FindObjectsOfType<PlayerMuerte>();
 
-        // Verificamos cuántos jugadores están vivos
+        //cuantos jugadores vivos
         int alivePlayersCount = 0;
         PlayerMuerte lastAlivePlayer = null;
 
@@ -30,30 +31,26 @@ public class GameController : MonoBehaviour
 
         if (alivePlayersCount == 0)
         {
-            EndGame();
+            FinJuego();
         }
         else if (alivePlayersCount == 1)
         {
-            DeclareWinner(lastAlivePlayer);
+            Ganador(lastAlivePlayer);
         }
     }
 
-    void EndGame()
+    void FinJuego()
     {
-        Debug.Log("Game Over");
-        // Aquí podrías implementar lógica adicional para finalizar el juego, como mostrar una pantalla de fin de juego o reiniciar la escena
-        Time.timeScale = 0; // Pausa el juego
+        Time.timeScale = 0;
     }
 
-    void DeclareWinner(PlayerMuerte winner)
+    void Ganador(PlayerMuerte ganador)
     {
-        Debug.Log($"Winner: {winner.name}");
-        // Mostrar el canvas del jugador ganador
-        if (winner.playerWinCanvas != null)
+        if (ganador.playerWinCanvas != null)
         {
-            winner.playerWinCanvas.gameObject.SetActive(true);
+            ganador.playerWinCanvas.gameObject.SetActive(true);
         }
-        Time.timeScale = 0; // Pausa el juego
+        Time.timeScale = 0;
     }
 }
 

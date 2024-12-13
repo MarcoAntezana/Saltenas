@@ -14,4 +14,10 @@ public class ControlEscenas : MonoBehaviour
         Application.Quit();
     }
 
+    public void ReiniciarEscena()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
 }
+

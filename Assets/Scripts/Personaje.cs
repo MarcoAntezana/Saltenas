@@ -22,9 +22,6 @@ public class Personaje : MonoBehaviour
     [SerializeField]
     private int playerIndex = 0;
 
-    private CharacterController controller;
-
-    private Vector3 moveDirection = Vector3.zero;
     private Vector2 inputVector = Vector2.zero;
     void Update()
     {
@@ -38,10 +35,11 @@ public class Personaje : MonoBehaviour
         }
 
         miAnimador.SetFloat("velY", miCuerpo.velocity.y);
-
+        
         if (entradaJugador.y != 0)
         {
             miAnimador.SetBool("corriendo", true);
+            ControlSonidos.Instance.ReproducirSonido("caminar");
         }
         else
         {
@@ -71,8 +69,8 @@ public class Personaje : MonoBehaviour
             empujando = !empujando; 
             CambiarCollider(empujando);
         }
-
     }
+
     public int GetPlayerIndex()
     {
         return playerIndex;

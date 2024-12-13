@@ -159,6 +159,74 @@ RectTransform:
   m_AnchoredPosition: {x: -4.9999847, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1001 &26053089
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6138428795639335999, guid: c0bfb918868f28b468a449accadb1a7f,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -19
+      objectReference: {fileID: 0}
+    - target: {fileID: 6138428795639335999, guid: c0bfb918868f28b468a449accadb1a7f,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -15.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6138428795639335999, guid: c0bfb918868f28b468a449accadb1a7f,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -20.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6138428795639335999, guid: c0bfb918868f28b468a449accadb1a7f,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.89669424
+      objectReference: {fileID: 0}
+    - target: {fileID: 6138428795639335999, guid: c0bfb918868f28b468a449accadb1a7f,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.15700366
+      objectReference: {fileID: 0}
+    - target: {fileID: 6138428795639335999, guid: c0bfb918868f28b468a449accadb1a7f,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.4076693
+      objectReference: {fileID: 0}
+    - target: {fileID: 6138428795639335999, guid: c0bfb918868f28b468a449accadb1a7f,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.0713795
+      objectReference: {fileID: 0}
+    - target: {fileID: 6138428795639335999, guid: c0bfb918868f28b468a449accadb1a7f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -12.907
+      objectReference: {fileID: 0}
+    - target: {fileID: 6138428795639335999, guid: c0bfb918868f28b468a449accadb1a7f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -50.629
+      objectReference: {fileID: 0}
+    - target: {fileID: 6138428795639335999, guid: c0bfb918868f28b468a449accadb1a7f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 15.228
+      objectReference: {fileID: 0}
+    - target: {fileID: 6305539839228057564, guid: c0bfb918868f28b468a449accadb1a7f,
+        type: 3}
+      propertyPath: m_Name
+      value: "JuegoSalte\xF1asLocas"
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c0bfb918868f28b468a449accadb1a7f, type: 3}
 --- !u!1 &67516034
 GameObject:
   m_ObjectHideFlags: 0
@@ -4715,3 +4783,4 @@ SceneRoots:
   - {fileID: 397349502}
   - {fileID: 2096616788}
   - {fileID: 1405592564}
+  - {fileID: 26053089}

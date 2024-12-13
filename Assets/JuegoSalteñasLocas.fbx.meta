@@ -1,89 +1,9 @@
 fileFormatVersion: 2
-guid: 523e242559820b743bf7f0abfcc66ec9
+guid: f470095202738e345bdf38772da2d1c5
 ModelImporter:
-  serializedVersion: 21202
+  serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Alacena
-    second: {fileID: 2100000, guid: 9b17dbc03a8a69a47b5c4e4678eeb7b2, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Bandeja
-    second: {fileID: 2100000, guid: 11e108d51617b7c479a7878911e56448, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Ceramica
-    second: {fileID: 2100000, guid: e6fcd7b478f0a874e9e8a9a8ccfd16bd, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Cuchillo
-    second: {fileID: 2100000, guid: ed35e4ad7b6218d4daa5068769b91674, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Item
-    second: {fileID: 2100000, guid: 43c502cf695e55044bfbe0015ebe6d36, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Madera
-    second: {fileID: 2100000, guid: 6426d56d492c2664fbd00c1801fb6f5d, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Material_Horno1
-    second: {fileID: 2100000, guid: 8faff55841c647540a7762b6526c77e8, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Material_Horno2
-    second: {fileID: 2100000, guid: 87c102a46f2ed814a95d956289c0bf57, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Material_Horno3
-    second: {fileID: 2100000, guid: e12fd0bfba7669045ab6300354cc863b, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Material_Horno4
-    second: {fileID: 2100000, guid: 3b652d447d58df44c9ad3188a4312044, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Material_Horno5
-    second: {fileID: 2100000, guid: a25a0d13c012d95418440fa3751908c0, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Metal_Lava
-    second: {fileID: 2100000, guid: 8587abbf749ce1e46907dbb5ec7c547f, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Pared
-    second: {fileID: 2100000, guid: e96f70436eb9d7f45899bdc36c34d847, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Piso
-    second: {fileID: 2100000, guid: 2bcbe2fc34f6d7e4988f46dbd06a70e7, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: "Salte\xF1as"
-    second: {fileID: 2100000, guid: 1c62d0c8180d8cc4e85774a9396fd967, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Verdura
-    second: {fileID: 2100000, guid: 2cf2df21a638d5646811aee4386f01fc, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -94,7 +14,7 @@ ModelImporter:
     bakeSimulation: 0
     resampleCurves: 1
     optimizeGameObjects: 0
-    removeConstantScaleCurves: 0
+    removeConstantScaleCurves: 1
     motionNodeName: 
     rigImportErrors: 
     rigImportWarnings: 
@@ -149,7 +69,7 @@ ModelImporter:
     useFileScale: 1
   tangentSpace:
     normalSmoothAngle: 60
-    normalImportMode: 1
+    normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
@@ -179,6 +99,7 @@ ModelImporter:
   humanoidOversampling: 1
   avatarSetup: 0
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
   additionalBone: 0
   userData: 
   assetBundleName: 
